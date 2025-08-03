@@ -6,4 +6,6 @@ body {
   background-color: #0A0A23;
   font-family: 'Inter', sans-serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
