@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import ListNFT from '../contracts/ListNFT';
+
+
 
 const MarketplaceSection = () => {
   return (
@@ -29,7 +32,7 @@ const MarketplaceSection = () => {
           <p className="text-gray-400">Check out the top trending art pieces gaining attention from the NFT community.</p>
         </div>
       </div>
-
+      <ListNFT />
       {/* Back to home */}
       <Link to="/" className="inline-block mt-10 text-highlight hover:underline text-sm">
         ← Go Back Home

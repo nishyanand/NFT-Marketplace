@@ -11,6 +11,11 @@ import CategoryFilterBar from './components/CategoryFilterBar';
 import MarketplaceSection from './components/MarketplaceSection';
 import CollectionsSection from './components/CollectionsSection';
 import AboutSection from './components/AboutSection';
+import MintNFT from './components/MintNFT';
+import BuyNFT from './contracts/BuyNFT';
+import BuyPage from './pages/BuyPage';
+
+
 
 import './index.css';
 
@@ -38,6 +43,7 @@ function App() {
             element={
               <>
                 <HeroSection />
+                <MintNFT />
                 <CategoryFilterBar
                   selectedCategory={selectedCategory}
                   onSelectCategory={setSelectedCategory}
@@ -51,6 +57,7 @@ function App() {
                 <NFTGridSection selectedCategory={selectedCategory} />
                 <LiveAuctionSection />
                 <TopCreators />
+                <BuyNFT />
                 <Testimonials />
               </>
             }
@@ -58,6 +65,8 @@ function App() {
           <Route path="/marketplace" element={<MarketplaceSection />} />
           <Route path="/collections" element={<CollectionsSection />} />
           <Route path="/about" element={<AboutSection />} />
+          <Route path="/buy" element={<BuyPage />} />
+
         </Routes>
 
         <Footer />
